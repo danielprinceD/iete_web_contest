@@ -1,0 +1,16 @@
+.tracking-in-contract-bck{-webkit-animation:tracking-in-contract-bck 1s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-contract-bck 2s cubic-bezier(.215,.61,.355,1.000) both}
+
+
+ @-webkit-keyframes tracking-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(400px);transform:translateZ(400px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes tracking-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(400px);transform:translateZ(400px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
+
+
+ .tilt-in-fwd-tl{-webkit-animation:tilt-in-fwd-tl .6s cubic-bezier(.25,.46,.45,.94) both;animation:tilt-in-fwd-tl .6s cubic-bezier(.25,.46,.45,.94) both}
+
+@-webkit-keyframes tilt-in-fwd-tl{0%{-webkit-transform:rotateY(-20deg) rotateX(35deg) translate(-300px,-300px) skew(35deg,-10deg);transform:rotateY(-20deg) rotateX(35deg) translate(-300px,-300px) skew(35deg,-10deg);opacity:0}100%{-webkit-transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);opacity:1}}@keyframes tilt-in-fwd-tl{0%{-webkit-transform:rotateY(-20deg) rotateX(35deg) translate(-300px,-300px) skew(35deg,-10deg);transform:rotateY(-20deg) rotateX(35deg) translate(-300px,-300px) skew(35deg,-10deg);opacity:0}100%{-webkit-transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);opacity:1}}
+
+
+
+.scale-in-ver-center{-webkit-animation:scale-in-ver-center .5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-ver-center .5s cubic-bezier(.25,.46,.45,.94) both}
+
+
+ @-webkit-keyframes scale-in-ver-center{0%{-webkit-transform:scaleY(0);transform:scaleY(0);opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);opacity:1}}@keyframes scale-in-ver-center{0%{-webkit-transform:scaleY(0);transform:scaleY(0);opacity:1}100%{-webkit-transform:scaleY(1);transform:scaleY(1);opacity:1}}

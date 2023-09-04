@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght,XTRA,YTLC@100..950,330..600,416..570&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top:16px;
+}
+body {
+background:white;
+margin:0; padding:0;
+color:var(--charcoal);
+font-family:sans-serif; 
+font-family: 'Roboto Flex', sans-serif;
+font-weight:400;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.cycleBanner {
+  margin-top: 25%;
+  background-color:#CEEDFF;
+  background-image:radial-gradient( at 10% 10%,#fff8,#fff0);
+  //background-blend-mode: overlay;
+  display:flex;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  //max-height:95vh;
+  transition:.5s ease-out;
+}
+.assess .cycleBanner {background-color:#1ab150;}
+.analyze .cycleBanner {background-color:#ffc810;}
+.accelerate .cycleBanner { background-color:#f57e2a;}
+.cycleBanner svg#ProficiencyCycle {
+  //border:solid thin orange;
+   flex:1 1 55%;
+}
+.cycleBanner h1 {
+  font-size:3em;
+  line-height:1.0;
+  margin-block:.25em;
+}
+#ProficiencyCycle {
+  animation:rock 3s infinite alternate ease-in-out;
+  //animation-delay:-2s;
+    rotate:-8deg;
+  position:sticky;
+  top:0px;
+}
+@keyframes rock{
+  100% {rotate:8deg;}
+}
+.cycleBanner .textBox {
+  //border:dotted 1px green;
+  flex:1 1 40%;
+  align-self:center;
+  margin-left:-1em;
+  overflow:auto;
+  height:100%;
+}
+p {
+  line-height:1.5;
+  margin:.8em 0; 
+}
+@media screen and (max-width: 1000px) {
+  .cycleBanner {
+    margin-top: 70%;
+    display:block;
+  }
+  .cycleBanner .textBox {
+    margin-left:0;
+  }
+
+}
+
+@media (max-width:700px) {
+  .cycleBanner {
+    margin-top: 70%;
+    display:block;
+  }
+  .cycleBanner .textBox {
+    margin-left:0;
+  }
+}
+
+
+
+/*--- Cycle Interactions ---*/
+#ProficiencyCycle .group{
+  translate: calc( var(--moveX) * var(--moveAmount) ) calc( var(--moveY) * var(--moveAmount) ) ;
+  transform-origin:center;
+  transition:.15s ease-out;
+}
+#ProficiencyCycle .group:hover{
+  scale:1.02;
+  --moveAmount:2%;
+  filter:brightness(1.1) saturate(1.1) ;
+}
+#ProficiencyCycle .group:active{
+  scale:1.09;
+  --moveAmount:2.5%;
+}
+#ProficiencyCycle .group:focus .st5 {
+  opacity:0.95 !important;
+  filter:drop-shadow(0px 0px 2em #fff);
+}
+
+
+
+
+
+.textBox article {
+  ///display:none;
+     background:#fff4;
+   margin-block:1em;
+  box-shadow:inset 0 0 6px 3px #fff4;
+   padding:.4vw 3vw;
+  transition:.4s ease-out;
+  border-left:solid transparent;
+}
+.textBox article.activate {
+  background:#fff8;
+  border-left:solid orange;
+}
+.textBox article:target {
+  display:block;
+    outline:dotted red;
+  outline-offset:2px;
+}

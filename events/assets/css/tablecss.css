@@ -1,0 +1,70 @@
+.bodyo {
+    position: relative;
+    margin: 0;
+    background: #fff;
+    font-family: sans-serif;
+    scroll-behavior: none;
+  }
+  
+  .tit {
+    font-size: max(2vw, 24px);
+    line-height: 1.1;
+    padding-bottom: .4em;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+  }
+  
+  .text {
+    font-size: max(1vw, 15px);
+    line-height: 1.4;
+    overflow: hidden;
+    padding-bottom: 20px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .accords {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5vh;
+  }
+  
+  .accord {
+    background: linear-gradient(200deg, rgb(29, 145, 252) 13.57%, rgb(90, 54, 192) 98.38%);
+    width: max(50vw, 280px);
+    padding: 25px 30px 10px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 30px 30px -10px rgba(0, 0, 0, .3);
+    
+    &:nth-child(2) {
+      background: linear-gradient(200deg, rgb(242, 136, 133) 13.57%, rgb(233, 79, 102) 98.38%);
+    }
+    
+    &:nth-child(3) {
+      background: linear-gradient(200deg, rgb(101, 187, 118) 13.57%, rgb(70, 111, 171) 98.38%);
+    }
+    
+    &:nth-child(4) {
+      background: linear-gradient(200deg, #c215d1 13.57%, #9813a1 98.38%);
+    }
+    &:nth-child(5) {
+        background: linear-gradient(200deg, #c215d1 13.57%, #9813a1 98.38%);
+      }
+      &:nth-child(6) {
+        background: linear-gradient(200deg, #c215d1 13.57%, #9813a1 98.38%);
+      }
+  }
+  
+  .spacer {
+    height: 20vh;
+  }
+  
+  @media (max-width: 480px) {
+    .accord {
+      padding: 15px 20px 8px;
+    }
+    .tit {
+      font-size: 20px;
+    }
+  }

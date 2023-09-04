@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+   
+
+    background: #313131;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    gap: 32px;
+  flex-wrap: wrap;
+  padding: 32px
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    background: #ffffff;
+    border-radius: 3px;
+    margin: 0 auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+}
+
+.card::before,
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+    z-index: -1;
+    transition: .5s;
+}
+
+.card:hover::after {
+    transform: rotate(10deg);
+}
+
+.card:hover::before {
+    transform: rotate(20deg);
+}
+
+.card .imgBox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #101010;
+    z-index: 1;
+    transition: .7s;
+}
+
+.card:hover .imgBox {
+    bottom: 160px;
+}
+
+.card .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.card .details {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 17px;
+    height: 140px;
+    
+}
+
+.card .details h2 {
+    margin-top: 5px;
+    padding: 0;
+    font-weight: 900;
+    font-size: 20px;
+    color: #101010;
+    text-align: center;
+    line-height: 1.15em;
+}
+
+.card .details h2 span {
+    font-weight: 400;
+    font-size: 15px;
+    color: #0dac4f;
+}
+
+
+
+
+
+.kenburns-top {
+	-webkit-animation: kenburns-top 5s cubic-bezier(0.950, 0.050, 0.795, 0.035) reverse backwards infinite;
+	        animation: kenburns-top 5s cubic-bezier(0.950, 0.050, 0.795, 0.035) reverse backwards infinite ;
+}
+
+ @-webkit-keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+-webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 16%;
+    }
+  }
+  @keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {-webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+-webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 16%;
+  }
+}
